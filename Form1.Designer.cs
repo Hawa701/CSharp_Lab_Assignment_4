@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.lbl_Number = new System.Windows.Forms.Label();
             this.lbl_inventoryNumber = new System.Windows.Forms.Label();
             this.lbl_date = new System.Windows.Forms.Label();
@@ -44,10 +43,6 @@
             this.btn_Add = new System.Windows.Forms.Button();
             this.btn_Cancel = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.dvList = new System.Windows.Forms.DataGridView();
-            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.dvList)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_Number
@@ -186,33 +181,18 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(269, 31);
+            this.label1.Location = new System.Drawing.Point(327, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(226, 37);
             this.label1.TabIndex = 15;
             this.label1.Text = "Add Inventory";
-            // 
-            // dvList
-            // 
-            this.dvList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvList.Location = new System.Drawing.Point(40, 442);
-            this.dvList.Name = "dvList";
-            this.dvList.RowHeadersWidth = 62;
-            this.dvList.RowTemplate.Height = 28;
-            this.dvList.Size = new System.Drawing.Size(687, 308);
-            this.dvList.TabIndex = 16;
-            // 
-            // errorProvider
-            // 
-            this.errorProvider.ContainerControl = this;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(768, 796);
-            this.Controls.Add(this.dvList);
+            this.ClientSize = new System.Drawing.Size(800, 435);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_Cancel);
             this.Controls.Add(this.btn_Add);
@@ -231,8 +211,6 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dvList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,8 +233,6 @@
         private System.Windows.Forms.Button btn_Add;
         private System.Windows.Forms.Button btn_Cancel;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dvList;
-        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }
 
