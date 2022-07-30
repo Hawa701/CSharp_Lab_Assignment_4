@@ -9,16 +9,29 @@ namespace CSharp_Lab_Assignment_4.Model
 {
     internal class Product
     {
+        static List<Product> products = new List<Product>();
         public int Number { get; set; }
         public string Date { get; set; }
-        public string Inventory { get; set; }
+        public int InventoryNumber { get; set; }
         public string ObjectName { get; set; }
         public int Count { get; set; }
         public double Price { get; set; }
 
+        public String CheckedBoxes { get; set; }
+
+        public String Availability { get; set; }
+
         public void save()
         {
-            MessageBox.Show($"{ObjectName} added to inventory!");
+            products.Add(this);
+
+            MessageBox.Show($"{ObjectName} added to inventory with colors:" +
+                $"\n{CheckedBoxes}");
+        }
+
+        static public List<Product> GetAllProduct()
+        {
+            return products;
         }
 
     }
